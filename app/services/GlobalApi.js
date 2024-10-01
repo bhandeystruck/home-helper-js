@@ -1,0 +1,1 @@
+const MASTER_URL = `https://us-west-2.hygraph.com/v2/${process.env.NEXT_PUBLIC_MASTER_URL_KEY}/master`;
