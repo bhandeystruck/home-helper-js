@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,17 +13,17 @@ export default function Header() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
+    { label: "Categories", href: "/categories" },
     { label: "About Us", href: "/about" },
   ]
 
   return (
-    <header className="bg-background shadow-sm">
+    <header className="backdrop-blur-md bg-white/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="ml-2 text-2xl font-bold text-green-400">HomeHelper</span>
+              <span className="ml-2 text-2xl font-bold text-[#6F5D44]">HomeHelper</span>
             </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
