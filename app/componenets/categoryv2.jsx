@@ -1,5 +1,6 @@
 import OnlinePulse from "@/components/ui/onlineSign";
 import { Star, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Category2({ categoryList, helperList }) {
   return (
@@ -54,9 +55,9 @@ export default function Category2({ categoryList, helperList }) {
                     />
                   ))}
                 </div>
-                <a href={`/categories/${category.id}`}>
+                <Link href={`/categories/${category.id}`}>
                   <ArrowRight className="w-5 h-5 text-green-600"/>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

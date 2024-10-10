@@ -1,6 +1,8 @@
-import "./globals.css";
-import Header from "./componenets/header";
+import "@/app/globals.css";
+
 import { poppins } from './font'
+import Header from "./componenets/header";
+import Footer from "./componenets/footer";
 
 export const metadata = {
   title: "Home Helper",
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
       >
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

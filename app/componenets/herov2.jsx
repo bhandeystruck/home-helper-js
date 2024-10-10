@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Hero2() {
   return (
-    <section className="bg-[#6F5D44] items-center justify-center  ">
+    <section className="bg-[#6F5D44] items-center justify-center">
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 text-white mb-8 md:mb-0">

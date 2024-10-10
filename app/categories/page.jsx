@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Categories() {
+function page() {
   return (
-    <div>Categories</div>
+    <div>page</div>
   )
 }
 
-export default Categories
+export default page

@@ -7,7 +7,6 @@ import React from "react";
 import { Badge} from "@/components/ui/badge";
 
 function helperList({ helperList }) {
-    console.log(helperList[0]);
   return (
     <section className="items-center justify-center bg-inherit py-10 px-5 lg:py-10 md:py-10 md:px-10 flex flex-col gap-5 m-auto md:max-w-max lg:max-w-6xl xl:max-w-6xl">
       <div className="header">
