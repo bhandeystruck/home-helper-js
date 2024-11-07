@@ -1,10 +1,10 @@
 import globalAPI from '@/app/services/GlobalApi'
-import Hero from '@/app/categories/components/hero'
+import Hero from '@/app/categories/[id]/components/hero'
 import React from 'react'
-import HelperGrid from '@/app/categories/components/helperGrid'
-import InfoSection from '@/app/categories/components/infoSection'
-import Faq from '@/app/categories/components/faq'
-import Checklist from '../components/checklist'
+import HelperGrid from '@/app/categories/[id]/components/helperGrid'
+import InfoSection from '@/app/categories/[id]/components/infoSection'
+import Faq from '@/app/categories/[id]/components/faq'
+import Checklist from './components/checklist'
 
 
 export default async function CategoriesPage({params}) {
@@ -14,7 +14,7 @@ export default async function CategoriesPage({params}) {
       <Hero categories={categories} />
       <HelperGrid categories={categories}/>
       <Checklist categories={categories}/>
-      <InfoSection/>
+      <InfoSection categories={categories}/>
       <Faq categories={categories}/>
     </div>
   )

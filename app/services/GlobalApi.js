@@ -57,6 +57,7 @@ const getAllHelperList = async () => {
   }
 };
 
+
 const getCategoryData = async (categoryId) => {
   const query = gql`
     query GetCategory($categoryId: ID!) {
@@ -66,6 +67,7 @@ const getCategoryData = async (categoryId) => {
       description
       faq
       checklist
+      chooseUs
       helper {
         id
         name

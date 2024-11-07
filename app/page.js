@@ -23,6 +23,7 @@ export default function Home() {
     });
   };
 
+
   const getAllHelperList = () => {
     GlobalApi.getAllHelperList().then((resp) => {
       setallHelperList(resp);
@@ -43,3 +44,4 @@ export default function Home() {
     </>
   );
 }
+

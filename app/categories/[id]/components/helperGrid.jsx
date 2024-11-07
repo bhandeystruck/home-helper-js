@@ -66,7 +66,7 @@ const helperGrid = ({ categories }) => {
           </TabsContent>
           <TabsContent value="top-rated">
             <div className="text-center text-muted-foreground">
-              Top rated cleaners content here
+              Top rated {categories.name} here
             </div>
           </TabsContent>
           <TabsContent value="new">
